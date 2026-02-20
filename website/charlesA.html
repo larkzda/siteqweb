@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Découvrez les animaux en voie de disparition, l'actualité de la conservation, et comment les héros de la faune luttent pour protéger notre planète.">
+    <title>Gardiens Sauvages | Mouvement pour la Conservation</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="loading">
+    <!-- Intro Animation (Chiens qui jouent) -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <h2 class="preloader-text">Préparation de votre expérience...</h2>
+            <div class="playing-dogs">
+                <span class="dog dog1">🐕</span>
+                <span class="ball">🎾</span>
+                <span class="dog dog2">🐩</span>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <!-- Background Elements -->
+        <div class="glow-orb top-left"></div>
+        <div class="glow-orb middle-right"></div>
+        <div class="glow-orb bottom-left"></div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">GARDIENS SAUVAGES</div>
+            <ul class="nav-links">
+                <li><a href="#animaux">Les Espèces</a></li>
+                <li><a href="#articles">Actualités</a></li>
+                <li><a href="#heros">Héros de la Faune</a></li>
+                <li><a href="#zoos">Sanctuaires</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+            </ul>
+            <button class="btn-primary" id="donateBtn">Soutenir</button>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <div class="badge">Notre Terre. Notre Responsabilité.</div>
+                <h1 class="title">La voix de ceux <br> qui <span class="gradient-text">n'en ont pas.</span></h1>
+                <p class="subtitle">La biodiversité mondiale s'effondre à un rythme sans précédent. Des forêts
+                    tropicales aux abysses océaniques, des espèces millénaires disparaissent en silence. Pourtant,
+                    l'espoir subsiste. Rejoignez le mouvement global pour protéger l'équilibre fragile de notre planète
+                    et laissez un héritage vivant aux générations futures.</p>
+                <div class="cta-group">
+                    <a href="#animaux" class="btn-primary lg">Rencontrer les espèces</a>
+                    <a href="#articles" class="btn-secondary lg">S'informer</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="wildlife_hero.png" alt="Explorer l'horizon" class="hero-image" id="heroImage">
+            </div>
+        </header>
+
+        <!-- Animals Grid -->
+        <section id="animaux" class="section-container">
+            <h2 class="section-title">Les Trésors Menacés</h2>
+            <p class="section-desc">Face à la déforestation, au braconnage et aux changements climatiques, ces espèces
+                luttent chaque jour pour leur survie.</p>
+            <div class="grid-container">
+                <!-- Animal 1 -->
+                <div class="card glass-panel animal-card">
+                    <div class="card-image-wrapper">
+                        <img src="snow_leopard.png" alt="Panthère des neiges" class="card-img">
+                        <div class="status-badge critical">En Danger Critique</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Panthère des Neiges</h3>
+                        <p>Le "fantôme des montagnes". Avec moins de 4,000 individus restants dans la nature en Asie
+                            centrale, ce noble félin subit la perte de ses proies et l'exploitation de son habitat
+                            montagneux.</p>
+                    </div>
+                </div>
+
+                <!-- Animal 2 -->
+                <div class="card glass-panel animal-card">
+                    <div class="card-image-wrapper">
+                        <img src="red_panda.png" alt="Petit Panda Roux" class="card-img">
+                        <div class="status-badge endangered">En Danger</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Panda Roux</h3>
+                        <p>Résident nocturne de l'Himalaya oriental, sa population mondiale a reculé de plus de 50% au
+                            cours de la dernière décennie. La déforestation pour les terres agricoles reste son plus
+                            grand défi.</p>
+                    </div>
+                </div>
+
+                <!-- Animal 3 -->
+                <div class="card glass-panel animal-card">
+                    <div class="card-image-wrapper">
+                        <img src="elephant_sunset.png" alt="Éléphant de Savane" class="card-img">
+                        <div class="status-badge vulnerable">Vulnérable</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Éléphant de Savane</h3>
+                        <p>Malgré leur carrure majestueuse, les éléphants ne font pas le poids face aux braconniers
+                            d'ivoire et à l'expansion agricole qui fragmente inévitablement leurs immenses routes de
+                            migration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles / News Section -->
+        <section id="articles" class="section-container bg-darker">
+            <h2 class="section-title">Actualités de la Conservation</h2>
+            <div class="articles-layout">
+                <!-- Main Article -->
+                <article class="main-article glass-panel">
+                    <div class="article-meta">19 Février 2026 • Dossier Spécial</div>
+                    <h3 class="article-title">Le retour miraculeux des loups dans les Rocheuses : Un triomphe écologique
+                    </h3>
+                    <p class="article-excerpt">Après presque un siècle de disparition, la réintroduction minutieuse de
+                        plusieurs meutes dans le parc national de Yellowstone et les Rocheuses illustre la capacité
+                        incroyable de la nature à se régénérer. Les scientifiques ont constaté une revitalisation
+                        complète de l'écosystème local, de la repousse des forêts de saules jusqu'au retour de dizaines
+                        d'espèces d'oiseaux et de castors.</p>
+                    <a href="#" class="read-more">Lire l'article complet &rarr;</a>
+                </article>
+
+                <div class="side-articles">
+                    <article class="side-article glass-panel">
+                        <div class="article-meta">12 Février 2026</div>
+                        <h4 class="article-title">Les drones au secours des rhinocéros</h4>
+                        <p class="article-excerpt">Une nouvelle flotte de drones à vision thermique aide les gardes
+                            forestiers sud-africains à repérer les braconniers de nuit avec un taux de réussite de 85%.
+                        </p>
+                        <a href="#" class="read-more">Lire &rarr;</a>
+                    </article>
+                    <article class="side-article glass-panel">
+                        <div class="article-meta">05 Février 2026</div>
+                        <h4 class="article-title">Récifs coralliens : L'espoir d'Acapulco</h4>
+                        <p class="article-excerpt">Un groupe de biologistes marins met en culture une nouvelle variante
+                            de corail, incroyablement résiliente aux pics de chaleur des océans.</p>
+                        <a href="#" class="read-more">Lire &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Héros de la Faune -->
+        <section id="heros" class="section-container">
+            <h2 class="section-title">Les Héros de la Faune</h2>
+            <p class="section-desc">Ceux qui ont dédié, et parfois sacrifié, leur vie entière pour nous faire aimer et
+                comprendre le règne animal.</p>
+
+            <div class="heroes-grid">
+                <div class="hero-profile glass-panel">
+                    <div class="hero-icon">🦍</div>
+                    <h3>Dian Fossey</h3>
+                    <p class="hero-quote">« L'homme qui tue les animaux aujourd'hui est l'homme qui tuera les hommes
+                        demain. »</p>
+                    <p class="hero-bio">Pionnière américaine en primatologie, elle a consacré 18 ans de sa vie à étudier
+                        quotidiennement les gorilles des montagnes du Rwanda au mépris de tous les dangers. Son combat
+                        acharné contre le braconnage a littéralement sauvé l'espèce de l'extinction, payant cet exploit
+                        de sa propre vie en 1985.</p>
+                </div>
+
+                <div class="hero-profile glass-panel">
+                    <div class="hero-icon">🐒</div>
+                    <h3>Jane Goodall</h3>
+                    <p class="hero-quote">« Vous ne pouvez pas passer une seule journée sans avoir d'impact sur le monde
+                        qui vous entoure. »</p>
+                    <p class="hero-bio">L'éthologue britannique qui a révolutionné notre compréhension des chimpanzés et
+                        de ce qui définit fondamentalement la nature humaine. Ses observations extraordinaires dans le
+                        parc national de Gombe Stream en Tanzanie (notamment l'utilisation d'outils par les singes) ont
+                        marqué un tournant définitif en biologie.</p>
+                </div>
+
+                <div class="hero-profile glass-panel">
+                    <div class="hero-icon">🐊</div>
+                    <h3>Steve Irwin</h3>
+                    <p class="hero-quote">« Si nous pouvons apprendre aux gens la faune sauvage, ils seront touchés...
+                        car les humains veulent sauver ce qu'ils aiment. »</p>
+                    <p class="hero-bio">Directeur charismatique de l'Australia Zoo et phénomène télévisuel mondial, le
+                        "Chasseur de Crocodiles" a infusé sa passion pure pour la faune australienne et l'herpétologie à
+                        toute une génération. Son approche sans peur a sensibilisé des millions de personnes à la
+                        conservation de la nature.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sanctuaires & Zoos -->
+        <section id="zoos" class="section-container bg-darker">
+            <h2 class="section-title">Modèles de Conservation : Sanctuaires & Zoos Recommandés</h2>
+            <p class="section-desc">La conception moderne d'un zoo ne se résume plus à l'exhibition, mais à la
+                préservation active, la recherche et la reproduction d'espèces hors de leur milieu de plus en plus
+                menacé.</p>
+
+            <div class="zoo-list">
+                <!-- Zoo 1 -->
+                <div class="zoo-item glass-panel">
+                    <div class="zoo-info">
+                        <h3>San Diego Zoo Wildlife Alliance <span class="zoo-location">📍 Californie, USA</span></h3>
+                        <p>Considéré comme l'un des meilleurs instituts biologiques du monde. Ils gèrent "l'Arche
+                            Congelée", une vaste banque d'ADN visant à prévenir définitivement la disparition génétique
+                            de milliers d'espèces. Leurs efforts ont particulièrement sauvé le Condor de Californie.</p>
+                    </div>
+                    <div class="zoo-stat">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Espèces Sauvées</span>
+                    </div>
+                </div>
+
+                <!-- Zoo 2 -->
+                <div class="zoo-item glass-panel">
+                    <div class="zoo-info">
+                        <h3>Australia Zoo <span class="zoo-location">📍 Queensland, Australie</span></h3>
+                        <p>Fondé par la famille Irwin, ce zoo consacre une écrasante majorité de ses fonds à ses
+                            hôpitaux pour animaux sauvages et à la préservation de vastes tracts terrestres pour les
+                            tigres en Asie du Sud-Est et les éléphants de Sumatra.</p>
+                    </div>
+                    <div class="zoo-stat">
+                        <span class="stat-number">120K</span>
+                        <span class="stat-label">Soignés/An</span>
+                    </div>
+                </div>
+
+                <!-- Zoo 3 -->
+                <div class="zoo-item glass-panel">
+                    <div class="zoo-info">
+                        <h3>Base de Recherche de Chengdu <span class="zoo-location">📍 Sichuan, Chine</span></h3>
+                        <p>Leader mondial absolu de la préservation et la prolifération du grand panda. Si le Panda
+                            Géant est passé de la catégorie "En Danger" à "Vulnérable" au cours des dernières décennies,
+                            c'est en grande partie grâce aux succès reproductifs de cet institut de pointe.</p>
+                    </div>
+                    <div class="zoo-stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Naissances Pandas</span>
+                    </div>
+                </div>
+
+                <!-- Zoo 4 -->
+                <div class="zoo-item glass-panel">
+                    <div class="zoo-info">
+                        <h3>Sanctuaire de Sheldrick <span class="zoo-location">📍 Nairobi, Kenya</span></h3>
+                        <p>Un orphelinat iconique mondialement connu pour la réhabilitation d'éléphanteaux et de
+                            rhinocéros noirs dont les parents ont été victimes du braconnage. Les animaux sont élevés
+                            avec une immense affection et lentement réintroduits dans le géant parc national de Tsavo.
+                        </p>
+                    </div>
+                    <div class="zoo-stat">
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label">Éléphants Réintroduits</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie Photo -->
+        <section id="galerie" class="section-container">
+            <h2 class="section-title">La Beauté à l'État Pur</h2>
+            <p class="section-desc">Contemplez la magnificence de la faune sauvage à travers l'objectif de photographes.
+                Ces créatures uniques méritent notre protection absolue et notre respect infini.</p>
+
+            <div class="photo-gallery">
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1549480017-d77466a90827?auto=format&fit=crop&w=800&q=80"
+                        alt="Tigre de Sumatra"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80"
+                        alt="Lion d'Afrique"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1564750975191-0f81d187210e?auto=format&fit=crop&w=800&q=80"
+                        alt="Tortue Marine"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1574870111867-089730e5a72b?auto=format&fit=crop&w=800&q=80"
+                        alt="Gorille au dos argenté"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1588666305190-b2585f67b55f?auto=format&fit=crop&w=800&q=80"
+                        alt="Rhinocéros"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1521584874288-be92f2524d77?auto=format&fit=crop&w=800&q=80"
+                        alt="Arahyacinthe"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80"
+                        alt="Troupeau d'éléphants"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1564295644023-16f14ac50b93?auto=format&fit=crop&w=800&q=80"
+                        alt="Loup gris"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=800&q=80"
+                        alt="Léopard d'Afrique"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=800&q=80"
+                        alt="Tortue sous-marine"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=800&q=80"
+                        alt="Guépard en course"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1580214566276-2e869fbc2133?auto=format&fit=crop&w=800&q=80"
+                        alt="Baleine plongeante"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="logo" style="font-size: 1.2rem; margin-bottom: 1rem;">GARDIENS SAUVAGES</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Une initiative éducative et inspirante pour
+                        protéger notre planète et partager la beauté du monde sauvage.</p>
+                </div>
+                <div class="footer-col" style="text-align: right;">
+                    <p>&copy; 2026 Tous droits réservés.</p>
+                    <p style="margin-top: 0.5rem; color: var(--primary);">Construit avec passion.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

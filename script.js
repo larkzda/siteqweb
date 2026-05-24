@@ -141,7 +141,7 @@ const translations = {
     rdv_phone_label: 'Téléphone',
     rdv_email_label: 'Courriel',
     rdv_hours_label: 'Heures de visite',
-    rdv_hours_val: 'Sam–Dim · 10h – 17h (sur rendez-vous)',
+    rdv_hours_val: 'Sur rendez-vous seulement',
     form_title: 'Demande de Rendez-vous',
     form_firstname_label: 'Prénom *',
     form_firstname_placeholder: 'Jean',
@@ -150,7 +150,7 @@ const translations = {
     form_email_label: 'Courriel *',
     form_email_placeholder: 'jean@exemple.com',
     form_phone_label: 'Téléphone',
-    form_phone_placeholder: '(514) 000-0000',
+    form_phone_placeholder: '(819) 000-0000',
     form_subject_label: 'Objet de la visite *',
     form_subject_default: 'Choisissez un objet…',
     form_subject_opt1: "Visite de l'élevage",
@@ -181,7 +181,7 @@ const translations = {
     footer_contact_title: 'Nous Rejoindre',
     footer_contact_visit: 'Visites (Sur RDV)',
     footer_contact_hours: "Heures d'ouverture",
-    footer_contact_hours_val: 'Sam–Dim · 10h – 17h',
+    footer_contact_hours_val: 'Sur rendez-vous seulement',
     footer_copy: '© 2026 Julija\'s Royal Dobermans – Élevage de Dobermans Pure Race. Tous droits réservés.',
     footer_reg: 'Enregistré au Club du Doberman du Québec & Canin Club du Canada',
   },
@@ -321,7 +321,7 @@ const translations = {
     rdv_phone_label: 'Phone',
     rdv_email_label: 'Email',
     rdv_hours_label: 'Visiting Hours',
-    rdv_hours_val: 'Sat–Sun · 10:00 AM – 5:00 PM (by appointment)',
+    rdv_hours_val: 'By appointment only',
     form_title: 'Appointment Request',
     form_firstname_label: 'First Name *',
     form_firstname_placeholder: 'John',
@@ -330,7 +330,7 @@ const translations = {
     form_email_label: 'Email *',
     form_email_placeholder: 'john@example.com',
     form_phone_label: 'Phone',
-    form_phone_placeholder: '(514) 000-0000',
+    form_phone_placeholder: '(819) 000-0000',
     form_subject_label: 'Purpose of visit *',
     form_subject_default: 'Choose a purpose...',
     form_subject_opt1: 'Visit the kennel',
@@ -361,7 +361,7 @@ const translations = {
     footer_contact_title: 'Reach Us',
     footer_contact_visit: 'Visits (By Appt)',
     footer_contact_hours: 'Opening Hours',
-    footer_contact_hours_val: 'Sat–Sun · 10:00 AM – 5:00 PM',
+    footer_contact_hours_val: 'By appointment only',
     footer_copy: '© 2026 Julija\'s Royal Dobermans – Purebred Dobermans Kennel. All rights reserved.',
     footer_reg: 'Registered with the Quebec Doberman Club & Canadian Kennel Club',
   },
@@ -501,7 +501,7 @@ const translations = {
     rdv_phone_label: 'Telefon',
     rdv_email_label: 'E-pošta',
     rdv_hours_label: 'Radno vreme',
-    rdv_hours_val: 'Sub–Ned · 10h – 17h (po dogovoru)',
+    rdv_hours_val: 'Samo po dogovoru',
     form_title: 'Zahtev za Termin',
     form_firstname_label: 'Ime *',
     form_firstname_placeholder: 'Jovan',
@@ -541,7 +541,7 @@ const translations = {
     footer_contact_title: 'Kontakt',
     footer_contact_visit: 'Posete (po dogovoru)',
     footer_contact_hours: 'Radno vreme',
-    footer_contact_hours_val: 'Sub–Ned · 10h – 17h',
+    footer_contact_hours_val: 'Samo po dogovoru',
     footer_copy: '© 2026 Julija\'s Royal Dobermans – Uzgajivačnica čistokrvnih dobermana. Sva prava zadržana.',
     footer_reg: 'Registrovani kod Kvebečkog Doberman kluba i Kanadskog kinološkog saveza',
   }
@@ -695,14 +695,59 @@ document.addEventListener('DOMContentLoaded', () => {
       const submitText    = document.getElementById('submitText');
       const submitLoader  = document.getElementById('submitLoader');
 
+      // Change button state to loading
       submitText.classList.add('hidden');
       submitLoader.classList.remove('hidden');
       submitBtn.disabled = true;
 
-      setTimeout(() => {
+      // Prepare form data for FormSubmit.co
+      const formData = new FormData(rdvForm);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      // Add custom subject and template option for FormSubmit
+      data['_subject'] = "Nouveau rendez-vous - Julija's Royal Dobermans";
+      data['_template'] = "table"; // Generates a clean tabular layout in the email
+
+      // Submit via AJAX
+      fetch("https://formsubmit.co/ajax/Julijajuric1@iCloud.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(result => {
+        // Success: Hide form and show sleek custom success message
         rdvForm.classList.add('hidden');
         successMessage.classList.remove('hidden');
-      }, 1500);
+      })
+      .catch(error => {
+        console.error("Form submission error:", error);
+        
+        // Localized error alert
+        let errorMsg = "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou nous contacter directement par courriel.";
+        if (currentLang === 'en') {
+          errorMsg = "An error occurred while sending. Please try again or contact us directly by email.";
+        } else if (currentLang === 'sr') {
+          errorMsg = "Došlo je do greške prilikom slanja. Molimo pokušajte ponovo ili nas kontaktirajte direktno putem e-pošte.";
+        }
+        alert(errorMsg);
+        
+        // Reset button state to allow retrying
+        submitText.classList.remove('hidden');
+        submitLoader.classList.add('hidden');
+        submitBtn.disabled = false;
+      });
     });
   }
 

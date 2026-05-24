@@ -1759,18 +1759,20 @@ a.contact-value:hover {
   }
 
   /* Mobile nav overlay backdrop */
-  .nav-links::before {
-    content: '';
+  .nav-overlay {
     position: fixed;
     inset: 0;
-    right: min(85%, 320px);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     opacity: 0;
-    transition: opacity 0.45s ease;
-    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 1040;
   }
-  .nav-links.active::before {
+  .nav-overlay.active {
     opacity: 1;
+    visibility: visible;
   }
 
   /* ── HERO ── */

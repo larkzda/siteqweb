@@ -721,10 +721,12 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify(data)
       })
       .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
+        return response.json().then(json => {
+          if (!response.ok) {
+            throw new Error(json.message || 'Server error');
+          }
+          return json;
+        });
       })
       .then(result => {
         // Success: Hide form and show sleek custom success message
@@ -734,13 +736,30 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => {
         console.error("Form submission error:", error);
         
+        // Detect if it is a first-time activation error from FormSubmit
+        const isActivationError = error.message && (
+          error.message.toLowerCase().includes("activate") || 
+          error.message.toLowerCase().includes("activation")
+        );
+        
         // Localized error alert
-        let errorMsg = "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou nous contacter directement par courriel.";
-        if (currentLang === 'en') {
-          errorMsg = "An error occurred while sending. Please try again or contact us directly by email.";
-        } else if (currentLang === 'sr') {
-          errorMsg = "Došlo je do greške prilikom slanja. Molimo pokušajte ponovo ili nas kontaktirajte direktno putem e-pošte.";
+        let errorMsg = "";
+        if (isActivationError) {
+          errorMsg = "Première utilisation : Un courriel d'activation a été envoyé à Julijajuric1@iCloud.com. Veuillez ouvrir ce courriel de FormSubmit et cliquer sur le lien de confirmation pour activer votre formulaire.";
+          if (currentLang === 'en') {
+            errorMsg = "First-time use: An activation email has been sent to Julijajuric1@iCloud.com. Please open the email from FormSubmit and click the confirmation link to activate your form.";
+          } else if (currentLang === 'sr') {
+            errorMsg = "Prvo korišćenje: Aktivacioni e-mail je poslat na Julijajuric1@iCloud.com. Molimo otvorite e-mail od FormSubmit-a i kliknite na link za potvrdu.";
+          }
+        } else {
+          errorMsg = "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou nous contacter directement par courriel.";
+          if (currentLang === 'en') {
+            errorMsg = "An error occurred while sending. Please try again or contact us directly by email.";
+          } else if (currentLang === 'sr') {
+            errorMsg = "Došlo je do greške prilikom slanja. Molimo pokušajte ponovo ili nas kontaktirajte direktno putem e-pošte.";
+          }
         }
+        
         alert(errorMsg);
         
         // Reset button state to allow retrying

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- === SEO OPTIMISATION === -->
+    <title>Julija's Royal Dobermans – Élevage de Dobermans Pure Race au Québec</title>
+    <meta name="description" content="Julija's Royal Dobermans – Élevage professionnel de Dobermans pure race au Québec (Laurentides). Chiots d'exception, lignées championnes, santé garantie. Prenez rendez-vous !" />
+    <meta name="keywords" content="élevage doberman québec, doberman pure race, chiots doberman europe, éleveur doberman montréal, doberman saint-lin, chien de garde, chiots à vendre" />
+    <meta name="author" content="Julija's Royal Dobermans" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Julija's Royal Dobermans – Élevage de Dobermans Pure Race" />
+    <meta property="og:description" content="Découvrez une passion unique pour le Doberman. Lignées prestigieuses, chiots d'exception au tempérament stable. Venez visiter notre élevage au Québec." />
+    <meta property="og:image" content="julija black dress 1 doggo.png" />
+    <meta property="og:url" content="https://www.julijasroyaldobermans.ca/" />
+    <meta property="og:site_name" content="Julija's Royal Dobermans" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Élevage de Dobermans Pure Race | Julija's Royal" />
+    <meta name="twitter:description" content="Chiots d'exception, lignées championnes. Le meilleur de la race Doberman au Québec." />
+    <meta name="twitter:image" content="julija black dress 1 doggo.png" />
+
+    <!-- Schema.org / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Julija's Royal Dobermans",
+      "image": "logo no background.png",
+      "description": "Élevage professionnel de Dobermans pure race au Québec, spécialisé dans les lignées européennes de champions.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Chemin des Dobermans",
+        "addressLocality": "Saint-Lin",
+        "addressRegion": "QC",
+        "postalCode": "J5M 1B2",
+        "addressCountry": "CA"
+      },
+      "telephone": "+15141234567",
+      "email": "info@julijasroyaldobermans.ca",
+      "url": "https://www.julijasroyaldobermans.ca",
+      "openingHours": "Sa,Su 10:00-17:00",
+      "priceRange": "$$$"
+    }
+    </script>
+    
+    <link rel="icon" type="image/png" href="logo no background.png" />
+    <link rel="canonical" href="https://www.julijasroyaldobermans.ca/" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">
+                <img src="logo no background.png" alt="Julija's Royal Dobermans Logo" class="julija-logo-nav" />
+                <span class="nav-brand">Julija's Royal Dobermans</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil" class="nav-link" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">À Propos</a></li>
+                <li><a href="#dobermans" class="nav-link" data-i18n="nav_dogs">Nos Dobermans</a></li>
+                <li><a href="#chiots" class="nav-link" data-i18n="nav_puppies">Chiots</a></li>
+                <li><a href="#galerie" class="nav-link" data-i18n="nav_gallery">Galerie</a></li>
+                <li><a href="#partenaires" class="nav-link" data-i18n="nav_partners">Partenaires</a></li>
+                <li><a href="#rendez-vous" class="nav-link nav-cta" data-i18n="nav_rdv">Prendre RDV</a></li>
+            </ul>
+            <!-- Language Switcher -->
+            <div class="lang-switcher" id="langSwitcher">
+                <button class="lang-btn" id="langBtn" aria-label="Select language">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+                    <span id="langCurrent">FR</span>
+                    <svg class="lang-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+                    <button class="lang-option" data-lang="en">🇬🇧 English</button>
+                    <button class="lang-option" data-lang="sr">🇷🇸 Srpski</button>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="accueil">
+        <video autoplay muted loop playsinline class="hero-bg-video" poster="julija black dress 1 doggo.png">
+            <source src="246cd74f-e07f-4e5f-b31c-23ad3a12a468.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span data-i18n="hero_title_1">L'Excellence</span><br />
+                <span class="gold-text" data-i18n="hero_title_2">du Doberman</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+                Découvrez l'élégance et la force brute à travers nos lignées d'exception.<br />
+                Élevés par Julija, passionnée et experte de la race.
+            </p>
+            <div class="hero-actions">
+                <a href="#rendez-vous" class="btn btn-gold" data-i18n="hero_btn_rdv">Prendre Rendez-vous</a>
+                <a href="#dobermans" class="btn btn-outline" data-i18n="hero_btn_dogs">Découvrir nos chiens</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">150+</span>
+                    <span class="stat-label" data-i18n="stat_puppies">Chiots placés</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">15+</span>
+                    <span class="stat-label" data-i18n="stat_years">Années d'élevage</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">12</span>
+                    <span class="stat-label" data-i18n="stat_titles">Titres champions</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Défiler</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrap about-image-photo">
+                    <img src="julija red 2 doggos.png" alt="Julija S. Propriétaire de Julija's Royal Dobermans"
+                        class="about-photo" />
+                    <div class="about-badge-float">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+                        </svg>
+                        <span>Julija S. Propriétaire</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-tag" data-i18n="about_tag">Notre Histoire</div>
+                    <h2 class="section-title has-logo">
+                        <img src="logo no background.png" alt="Sceau Officiel Julija's Royal Dobermans" class="inline-logo" />
+                        <span data-i18n="about_title">La vision de</span> <span class="gold-text">Julija</span>
+                    </h2>
+                    <p class="about-text" data-i18n="about_p1">
+                        Chez <strong>Julija's Royal Dobermans</strong>, chaque Doberman est bien plus qu'un animal — c'est un
+                        compagnon d'exception.
+                        Sous la direction de Julija, notre élevage s'est imposé comme une référence pour les passionnés
+                        de la race.
+                    </p>
+                    <p class="about-text" data-i18n="about_p2">
+                        Julija sélectionne personnellement chaque lignée pour garantir non seulement la beauté physique,
+                        mais aussi un mental d'acier et une santé parfaite.
+                        Son approche unique combine entraînement rigoureux et vie de famille harmonieuse.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12M6 3a2 2 0 00-2 2v1c0 3.866 3.134 7 7 7s7-3.134 7-7V5a2 2 0 00-2-2M6 3H4M18 3h2M12 13v4m-4 4h8"/></svg></div>
+                            <div>
+                                <h4 data-i18n="feat1_title">Expertise de Julija</h4>
+                                <p data-i18n="feat1_desc">Plus de 15 ans passés à perfectionner les lignées les plus nobles.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 00-2 2v4a6 6 0 006 6 6 6 0 006-6V5a2 2 0 00-2-2h-4zm0 0v6m6-6v6"/><circle cx="19" cy="17" r="2"/><path d="M15 17h2"/></svg></div>
+                            <div>
+                                <h4 data-i18n="feat2_title">Santé Garantie</h4>
+                                <p data-i18n="feat2_desc">Tests génétiques rigoureux et suivi vétérinaire constant.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+                            <div>
+                                <h4 data-i18n="feat3_title">Lien Unique</h4>
+                                <p data-i18n="feat3_desc">Chaque chien est élevé comme un membre de la famille dès le premier jour.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NOS DOBERMANS ===== -->
+    <section class="section dobermans-section dark-section" id="dobermans">
+        <div class="container">
+            <div class="section-header centered">
+                <div class="section-tag" data-i18n="dogs_tag">Nos Reproducteurs</div>
+                <h2 class="section-title"><span data-i18n="dogs_title">Rencontrez</span> <span class="gold-text" data-i18n="dogs_title2">Nos Champions</span></h2>
+                <p class="section-desc" data-i18n="dogs_desc">Nos chiens sont le reflet du travail acharné de Julija et de notre engagement
+                    pour la race.</p>
+            </div>
+            <div class="dogs-grid">
+                <div class="dog-card">
+                    <div class="dog-image-placeholder"
+                        style="background: url('doggo lyna main.jpg') center/cover no-repeat;">
+                        <div class="dog-gender female-badge">♀ Femelle</div>
+                    </div>
+                    <div class="dog-info">
+                        <h3 class="dog-name">Lyna</h3>
+                        <div class="dog-meta">
+                            <span class="dog-color">1 an</span>
+                            <span class="dog-title">Espoir de l'élevage</span>
+                        </div>
+                        <p class="dog-desc">Jeune et pleine de vie, Lyna apporte une belle énergie à notre élevage. Une chienne très prometteuse avec un tempérament en or.</p>
+                    </div>
+                </div>
+                <div class="dog-card featured">
+                    <div class="dog-featured-badge"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg> Vedette</div>
+                    <div class="dog-image-placeholder"
+                        style="background: url('tesla doggo main.jpg') center top/cover no-repeat;">
+                        <div class="dog-gender female-badge">♀ Femelle</div>
+                    </div>
+                    <div class="dog-info">
+                        <h3 class="dog-name">Tesla</h3>
+                        <div class="dog-meta">
+                            <span class="dog-color">2 ans</span>
+                            <span class="dog-title">Pure race certifiée</span>
+                        </div>
+                        <p class="dog-desc">Excellente chienne pure race au standard parfait. Ses tests génétiques ont été approuvés avec succès, garantissant une santé et des lignées irréprochables.</p>
+                    </div>
+                </div>
+                <div class="dog-card">
+                    <div class="dog-image-placeholder"
+                        style="background: url('zidan main.jpg') center top/cover no-repeat;">
+                        <div class="dog-gender male-badge">♂ Mâle</div>
+                    </div>
+                    <div class="dog-info">
+                        <h3 class="dog-name">Zidan</h3>
+                        <div class="dog-meta">
+                            <span class="dog-color">2 ans</span>
+                            <span class="dog-title">Tests génétiques effectués</span>
+                        </div>
+                        <p class="dog-desc">Mâle pure race d'une carrure impressionnante. Zidan combine une génétique irréprochable et un équilibre de caractère parfait pour l'élevage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CHIOTS DISPONIBLES ===== -->
+    <section class="section chiots-section" id="chiots">
+        <div class="container">
+            <div class="section-header centered">
+                <div class="section-tag" data-i18n="pups_tag">Portées</div>
+                <h2 class="section-title"><span data-i18n="pups_title">Prochaines</span> <span class="gold-text" data-i18n="pups_title2">Portées</span></h2>
+                <p class="section-desc" data-i18n="pups_desc">Les portées seront annoncées ici dès qu'elles seront disponibles. Inscrivez-vous pour être informé en priorité.</p>
+            </div>
+
+            <!-- Bannière "Bientôt disponible" -->
+            <div class="chiots-coming-soon">
+                <div class="csoon-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="56" height="56"><path d="M3 9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M8 9V7a4 4 0 018 0v2"/></svg></div>
+                <h3 class="csoon-title">Aucun chiot disponible pour le moment</h3>
+                <p class="csoon-text">
+                    Julija travaille à préparer les prochaines portées avec le plus grand soin.<br />
+                    Chaque portée est planifiée pour garantir la santé, le tempérament et la qualité génétique de nos Dobermans.
+                </p>
+
+                <div class="csoon-steps">
+                    <div class="csoon-step">
+                        <div class="cstep-num">01</div>
+                        <div class="cstep-info">
+                            <strong>Annonce de la portée</strong>
+                            <span>Dès la confirmation de la gestation</span>
+                        </div>
+                    </div>
+                    <div class="csoon-divider"></div>
+                    <div class="csoon-step">
+                        <div class="cstep-num">02</div>
+                        <div class="cstep-info">
+                            <strong>Ouverture des réservations</strong>
+                            <span>Quelques semaines avant la naissance</span>
+                        </div>
+                    </div>
+                    <div class="csoon-divider"></div>
+                    <div class="csoon-step">
+                        <div class="cstep-num">03</div>
+                        <div class="cstep-info">
+                            <strong>Remise des chiots</strong>
+                            <span>À 8–10 semaines, vaccinés et vermifugés</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="csoon-notify">
+                    <p>Vous souhaitez être informé dès l'annonce d'une nouvelle portée ?</p>
+                    <a href="#rendez-vous" class="btn btn-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;vertical-align:middle;margin-right:8px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Nous contacter pour s'inscrire</a>
+                </div>
+            </div>
+
+            <!-- Photos des chiots disponibles -->
+            <div class="chiots-photos-preview">
+                <div class="csoon-photo" style="background-image:url('small doggo 2 hand.png');"></div>
+                <div class="csoon-photo" style="background-image:url('small doggo ear.png'); background-position: center 35%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERIE ===== -->
+    <section class="section galerie-section dark-section" id="galerie">
+        <div class="container">
+            <div class="section-header centered">
+                <div class="section-tag" data-i18n="gallery_tag">Galerie</div>
+                <h2 class="section-title"><span class="gold-text">Julija's Royal Dobermans</span> <span data-i18n="gallery_title">en Images</span></h2>
+            </div>
+            <!-- Grille vignettes compacte -->
+            <div class="galerie-thumbs" id="galerieThumbs">
+                <div class="galerie-thumb" data-index="0" style="background-image:url('054d8d63-0f87-467c-b99c-4d3416552c8c.jpg');"><div class="thumb-overlay"><span>Julija et ses champions</span></div></div>
+                <div class="galerie-thumb" data-index="1" style="background-image:url('225e218d-1ed5-43dd-bfa9-ff9611a98959.jpg');"><div class="thumb-overlay"><span>Portrait de champion</span></div></div>
+                <div class="galerie-thumb" data-index="2" style="background-image:url('c4ca8d6e-8c95-4fb7-8234-ca2ae6b74a67.jpg');"><div class="thumb-overlay"><span>Regard perçant</span></div></div>
+                <div class="galerie-thumb" data-index="3" style="background-image:url('julija black dress 2 doggo.png');"><div class="thumb-overlay"><span>Élégance naturelle</span></div></div>
+                <div class="galerie-thumb" data-index="4" style="background-image:url('julija red 2 doggos.png');"><div class="thumb-overlay"><span>Majesté royale</span></div></div>
+                <div class="galerie-thumb" data-index="5" style="background-image:url('e29f73ab-45cf-49cf-8b48-f2f422049a1c.jpg');"><div class="thumb-overlay"><span>Puissance et grâce</span></div></div>
+                <div class="galerie-thumb" data-index="6" style="background-image:url('5b3f405c-9a54-4b2e-a470-4668df1e8f10.jpg');"><div class="thumb-overlay"><span>L'âme du Doberman</span></div></div>
+                <div class="galerie-thumb" data-index="7" style="background-image:url('julija blacn couche 1 doggo.png');"><div class="thumb-overlay"><span>Noblesse naturelle</span></div></div>
+                <div class="galerie-thumb" data-index="8" style="background-image:url('julija blue dress hiver.png');"><div class="thumb-overlay"><span>Complicité</span></div></div>
+                <div class="galerie-thumb" data-index="9" style="background-image:url('0a0242c8-5221-47a8-8d3d-fb7eaa66235f.jpg');"><div class="thumb-overlay"><span>Noble silhouette</span></div></div>
+                <div class="galerie-thumb" data-index="10" style="background-image:url('436d36e1-fbaa-4743-a8bc-045371b3a60f.jpg');"><div class="thumb-overlay"><span>Fierté et élégance</span></div></div>
+                <div class="galerie-thumb" data-index="11" style="background-image:url('496e2918-a55f-46ab-9698-31d25277d5bf.jpg');"><div class="thumb-overlay"><span>Force brute</span></div></div>
+                <div class="galerie-thumb" data-index="12" style="background-image:url('julija 1 doggo.png');"><div class="thumb-overlay"><span>Caractère unique</span></div></div>
+                <div class="galerie-thumb" data-index="13" style="background-image:url('8f16ef12-a146-45e3-a665-ee9a656320d7.jpg');"><div class="thumb-overlay"><span>Jeune champion</span></div></div>
+                <div class="galerie-thumb" data-index="14" style="background-image:url('julija table 2 doggo.png');"><div class="thumb-overlay"><span>Duo de champions</span></div></div>
+                <div class="galerie-thumb" data-index="15" style="background-image:url('redm dress 1 doggo.png');"><div class="thumb-overlay"><span>Allure royale</span></div></div>
+                <div class="galerie-thumb" data-index="16" style="background-image:url('julija 3 doggo.png');"><div class="thumb-overlay"><span>Le regard du champion</span></div></div>
+                <div class="galerie-thumb" data-index="17" style="background-image:url('a5108273-c055-4837-a9b4-f1d52012bf1c.jpg');"><div class="thumb-overlay"><span>Noblesse innée</span></div></div>
+                <div class="galerie-thumb" data-index="18" style="background-image:url('julija black dress 1 doggo.png');"><div class="thumb-overlay"><span>Excellence royale</span></div></div>
+                <div class="galerie-thumb" data-index="19" style="background-image:url('small doggo ear.png');"><div class="thumb-overlay"><span>Portée d'exception</span></div></div>
+                <div class="galerie-thumb" data-index="20" style="background-image:url('ca57b3ef-820b-4744-bea9-b07cfe863dbc.jpg');"><div class="thumb-overlay"><span>À l'élevage</span></div></div>
+                <div class="galerie-thumb" data-index="21" style="background-image:url('small doggo 2 hand.png');"><div class="thumb-overlay"><span>Jeunesse prometteuse</span></div></div>
+                <div class="galerie-thumb" data-index="22" style="background-image:url('doggo lyna main.jpg');"><div class="thumb-overlay"><span>Instant précieux</span></div></div>
+            </div>
+
+            <!-- Lightbox Popup -->
+            <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie plein écran">
+                <button class="lb-close" id="lbClose" aria-label="Fermer">&times;</button>
+                <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Précédent">&#8249;</button>
+                <div class="lb-stage">
+                    <img class="lb-img" id="lbImg" src="" alt="" />
+                </div>
+                <button class="lb-arrow lb-next" id="lbNext" aria-label="Suivant">&#8250;</button>
+                <div class="lb-footer">
+                    <span class="lb-caption" id="lbCaption"></span>
+                    <span class="lb-counter" id="lbCounter"></span>
+                </div>
+            </div>
+
+            <!-- Vidéos -->
+            <div class="section-tag" style="margin-top: 3rem; margin-bottom: 1.5rem;">En Mouvement</div>
+            <div class="galerie-videos">
+                <div class="galerie-video-wrap">
+                    <video controls preload="metadata" class="galerie-video" poster="julija black dress 1 doggo.png">
+                        <source src="246cd74f-e07f-4e5f-b31c-23ad3a12a468.mp4" type="video/mp4" />
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                    <div class="galerie-video-label">Nos Dobermans en action</div>
+                </div>
+                <div class="galerie-video-wrap">
+                    <video controls preload="metadata" class="galerie-video" poster="redm dress 1 doggo.png">
+                        <source src="a363cd75-a9c7-4e47-9529-89723860dd54.mp4" type="video/mp4" />
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                    <div class="galerie-video-label">La vie à l'élevage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TÉMOIGNAGES ===== -->
+    <section class="section temoignages-section" id="temoignages">
+        <div class="container">
+            <div class="section-header centered">
+                <div class="section-tag" data-i18n="reviews_tag">Avis Clients</div>
+                <h2 class="section-title"><span data-i18n="reviews_title">Ce que disent</span> <span class="gold-text" data-i18n="reviews_title2">Nos Familles</span></h2>
+            </div>
+            <div class="temoignages-grid">
+                <div class="temoignage-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="temoignage-text">"Notre Doberman de chez Julija's Royal Dobermans est absolument magnifique et a un
+                        caractère en or. Le suivi de l'élevage est exceptionnel, ils sont toujours disponibles pour nos
+                        questions."</p>
+                    <div class="temoignage-author">
+                        <div class="author-avatar">MR</div>
+                        <div>
+                            <strong>Marc &amp; Rachel T.</strong>
+                            <span>Montréal, QC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="temoignage-card featured-temoignage">
+                    <div class="stars">★★★★★</div>
+                    <p class="temoignage-text">"J'ai cherché pendant deux ans avant de trouver un élevage sérieux.
+                        Julija's Royal Dobermans dépasse toutes mes attentes — professionnalisme, transparence et amour des animaux au
+                        rendez-vous."</p>
+                    <div class="temoignage-author">
+                        <div class="author-avatar">SC</div>
+                        <div>
+                            <strong>Sophie C.</strong>
+                            <span>Québec, QC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="temoignage-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="temoignage-text">"Titan, notre mâle, est arrivé parfaitement socialisé. À 3 ans, c'est un
+                        chien équilibré, protecteur et affectueux. Merci Julija's Royal Dobermans pour ce cadeau inestimable."</p>
+                    <div class="temoignage-author">
+                        <div class="author-avatar">PB</div>
+                        <div>
+                            <strong>Pierre B.</strong>
+                            <span>Laval, QC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PARTENAIRES ===== -->
+    <section class="section partenaires-section dark-section" id="partenaires">
+        <div class="container">
+            <div class="section-header centered">
+                <div class="section-tag" data-i18n="partners_tag">Nos Collaborations</div>
+                <h2 class="section-title"><span data-i18n="partners_title">Nos</span> <span class="gold-text" data-i18n="partners_title2">Partenaires</span></h2>
+                <p class="section-desc" data-i18n="partners_desc">Julija's Royal Dobermans s'associe aux meilleurs professionnels pour garantir la santé, la beauté et l'excellence de nos Dobermans.</p>
+            </div>
+            <div class="partenaires-grid">
+
+                <div class="partenaire-card" style="border: 1px dashed var(--primary-gold); background: rgba(201, 154, 46, 0.03);">
+                    <div class="partenaire-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                    <div class="partenaire-info">
+                        <span class="partenaire-tag">Collaborations</span>
+                        <h3 class="partenaire-name">Devenez Partenaire</h3>
+                        <p class="partenaire-desc">Vous êtes un professionnel du monde canin engagé envers le bien-être animal ? Associez votre expertise à notre élevage.</p>
+                        <a href="#rendez-vous" class="partenaire-link" style="color:var(--primary-gold);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:5px;">Contactez-nous <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="partenaire-card featured-partenaire">
+                    <div class="partenaire-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+                    <div class="partenaire-info">
+                        <span class="partenaire-tag">Association Officielle</span>
+                        <h3 class="partenaire-name">Club Canin Canadien (CKC)</h3>
+                        <p class="partenaire-desc">Élevage enregistré et reconnu par le Club Canin Canadien, garantissant une pureté génétique et des standards d'excellence pour nos Dobermans.</p>
+                        <a href="https://www.ckc.ca/fr" target="_blank" rel="noopener noreferrer" class="partenaire-link" style="color:var(--primary-gold);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:5px;">Visiter le site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="partenaire-card">
+                    <div class="partenaire-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+                    <div class="partenaire-info">
+                        <span class="partenaire-tag">Entraîneure Canin</span>
+                        <h3 class="partenaire-name">Marie-France Poulin</h3>
+                        <p class="partenaire-desc">Entraîneure canin professionnelle chez Espace Canin Estrie. Experte en éducation, comportement et réhabilitation (éducation de l'Australien Banjo, etc.).</p>
+                        <a href="https://www.espacecaninestrie.com/entraineure" target="_blank" rel="noopener noreferrer" class="partenaire-link" style="color:var(--primary-gold);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:5px;">Visiter le site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="partenaire-card">
+                    <div class="partenaire-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 00-2 2v4a6 6 0 006 6 6 6 0 006-6V5a2 2 0 00-2-2h-4zm0 0v6m6-6v6"/><circle cx="19" cy="17" r="2"/><path d="M15 17h2"/></svg></div>
+                    <div class="partenaire-info">
+                        <span class="partenaire-tag">Vétérinaire Partenaire</span>
+                        <h3 class="partenaire-name">Carrefour Santé Animale</h3>
+                        <p class="partenaire-desc">Clinique vétérinaire de référence à Sherbrooke offrant des soins professionnels, bienveillants et un suivi rigoureux pour nos Dobermans.</p>
+                        <a href="https://www.csavet.com/" target="_blank" rel="noopener noreferrer" class="partenaire-link" style="color:var(--primary-gold);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:5px;">Visiter le site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="partenaires-cta">
+                <p>Vous souhaitez devenir partenaire de Julija's Royal Dobermans ?</p>
+                <a href="#rendez-vous" class="btn btn-gold">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RENDEZ-VOUS ===== -->
+    <section class="section rdv-section dark-section" id="rendez-vous">
+        <div class="container">
+            <div class="rdv-grid">
+                <div class="rdv-info">
+                    <div class="section-tag" data-i18n="rdv_tag">Contact &amp; Rendez-vous</div>
+                    <h2 class="section-title"><span data-i18n="rdv_title">Prenez</span> <span class="gold-text" data-i18n="rdv_title2">Rendez-vous</span></h2>
+                    <p class="rdv-desc" data-i18n="rdv_desc">
+                        Que ce soit pour visiter nos installations, rencontrer nos reproducteurs, vous informer sur une
+                        portée à venir ou réserver votre chiot, nous sommes là pour vous accueillir.
+                    </p>
+                    <div class="rdv-contacts">
+                        <div class="rdv-contact-item">
+                            <div class="rdv-contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            <div>
+                                <strong>Adresse</strong>
+                                <span>123 Chemin des Dobermans, Saint-Lin, QC J5M 1B2</span>
+                            </div>
+                        </div>
+                        <div class="rdv-contact-item">
+                            <div class="rdv-contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg></div>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <span><a href="tel:+15141234567">(514) 123-4567</a></span>
+                            </div>
+                        </div>
+                        <div class="rdv-contact-item">
+                            <div class="rdv-contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                            <div>
+                                <strong>Courriel</strong>
+                                <span><a href="mailto:info@julijasroyaldobermans.ca">info@julijasroyaldobermans.ca</a></span>
+                            </div>
+                        </div>
+                        <div class="rdv-contact-item">
+                            <div class="rdv-contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+                            <div>
+                                <strong>Heures de visite</strong>
+                                <span>Sam–Dim · 10h – 17h (sur rendez-vous)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rdv-logo-large">
+                        <img src="logo no background.png" alt="Julija Logo Large" />
+                    </div>
+                </div>
+                <div class="rdv-form-wrap">
+                    <form class="rdv-form" id="rdvForm" onsubmit="handleSubmit(event)">
+                        <h3 class="form-title" data-i18n="form_title">Demande de Rendez-vous</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Jean" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="nom">Nom *</label>
+                                <input type="text" id="nom" name="nom" placeholder="Tremblay" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Courriel *</label>
+                                <input type="email" id="email" name="email" placeholder="jean@exemple.com" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="(514) 000-0000" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="objet">Objet de la visite *</label>
+                            <select id="objet" name="objet" required>
+                                <option value="" disabled selected>Choisissez un objet…</option>
+                                <option value="visite">Visite de l'élevage</option>
+                                <option value="chiot-disponible">Réserver un chiot disponible</option>
+                                <option value="chiot-futur">S'inscrire pour une future portée</option>
+                                <option value="info-reproduction">Information sur la reproduction</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date-pref">Date préférée *</label>
+                                <input type="date" id="date-pref" name="date-pref" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="heure-pref">Heure préférée</label>
+                                <select id="heure-pref" name="heure-pref">
+                                    <option value="10h">10h00</option>
+                                    <option value="11h">11h00</option>
+                                    <option value="12h">12h00</option>
+                                    <option value="13h">13h00</option>
+                                    <option value="14h">14h00</option>
+                                    <option value="15h">15h00</option>
+                                    <option value="16h">16h00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message / Questions</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Décrivez votre projet, vos questions sur nos chiots disponibles, ou toute autre information utile…"></textarea>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" id="consent" name="consent" required />
+                            <label for="consent">J'accepte d'être contacté(e) par Julija's Royal Dobermans concernant ma
+                                demande.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold btn-full" id="submitBtn">
+                            <span id="submitText">Envoyer ma demande</span>
+                            <span id="submitLoader" class="hidden">Envoi en cours…</span>
+                        </button>
+                    </form>
+                    <div class="form-success hidden" id="formSuccess">
+                        <div class="success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:52px;height:52px;color:var(--primary-gold);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg></div>
+                        <h3>Demande envoyée !</h3>
+                        <p>Merci pour votre message. Nous vous contacterons dans les 24 à 48 heures pour confirmer votre
+                            rendez-vous.</p>
+                        <a href="#accueil" class="btn btn-gold">Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo no background.png" alt="Julija's Royal Dobermans" class="footer-logo" />
+                    <p>Élevage professionnel de Dobermans pure race. Qualité, santé et tempérament irréprochables depuis
+                        2009.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_nav">Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil" data-i18n="nav_home">Accueil</a></li>
+                        <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+                        <li><a href="#dobermans" data-i18n="nav_dogs">Nos Dobermans</a></li>
+                        <li><a href="#chiots" data-i18n="footer_puppies">Chiots disponibles</a></li>
+                        <li><a href="#galerie" data-i18n="nav_gallery">Galerie</a></li>
+                        <li><a href="#partenaires" data-i18n="nav_partners">Partenaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#rendez-vous">Prendre rendez-vous</a></li>
+                        <li><a href="#chiots">Réserver un chiot</a></li>
+                        <li><a href="#rendez-vous">Contact</a></li>
+                        <li><a href="#">Conseils d'élevage</a></li>
+                        <li><a href="#">Club du Doberman</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Nous Rejoindre</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Visites (Sur RDV)</span>
+                                <span class="contact-value">Saint-Lin, QC J5M 1B2</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.02 2.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Téléphone</span>
+                                <a href="tel:+15141234567" class="contact-value">(514) 123-4567</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Courriel</span>
+                                <a href="mailto:info@julijasroyaldobermans.ca" class="contact-value">info@julijasroyaldobermans.ca</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Heures d'ouverture</span>
+                                <span class="contact-value">Sam–Dim · 10h – 17h</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Julija's Royal Dobermans – Élevage de Dobermans Pure Race. Tous droits réservés.</p>
+                <p>Enregistré au Club du Doberman du Québec &amp; Canin Club du Canada</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
